@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 40% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 40% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 40% 10%;
+
+    --primary: 331 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 180 100% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 10% 96%;
+    --muted-foreground: 220 10% 46%;
+
+    --accent: 331 100% 97%;
+    --accent-foreground: 331 100% 50%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 331 100% 50%;
+
+    --radius: 1.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 331 100% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 331 100% 97%;
+    --sidebar-accent-foreground: 331 100% 50%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 331 100% 50%;
+
+    /* Custom tokens */
+    --gummy-pink: 331 100% 50%;
+    --gummy-teal: 180 100% 45%;
+    --gummy-warm-bg: 331 100% 98%;
+    --gummy-danger-bg: 0 100% 98%;
+    --gummy-success: 152 69% 45%;
+  }
+
+  .dark {
+    --background: 220 40% 6%;
+    --foreground: 0 0% 95%;
+    --card: 220 40% 8%;
+    --card-foreground: 0 0% 95%;
+    --popover: 220 40% 8%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 331 100% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 180 100% 40%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 20% 15%;
+    --muted-foreground: 220 10% 60%;
+    --accent: 331 60% 15%;
+    --accent-foreground: 331 100% 70%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 95%;
+    --border: 220 20% 18%;
+    --input: 220 20% 18%;
+    --ring: 331 100% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.04em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+    line-height: 1.6;
+  }
+}
+
+/* Gummy card shadow */
+.gummy-card-shadow {
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.03), 0 2px 4px rgba(0,0,0,0.05), 0 12px 24px rgba(0,0,0,0.03);
+}
+
+/* Hero gradient */
+.gummy-hero-gradient {
+  background: radial-gradient(ellipse at top, hsl(331, 100%, 98%) 0%, transparent 70%);
+}
+
+/* Tabular numbers for data */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
