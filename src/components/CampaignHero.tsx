@@ -12,13 +12,13 @@ const CampaignHero = () => {
         </div>
 
         <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-foreground">
-          Regras de Ouro:{" "}
-          <span className="text-primary">Campanha TikTok Shop 2026</span>
+          Mega Campanha{" "}
+          <span className="text-primary">Gummy Original — TikTok Shop</span>
         </h1>
 
         <p className="text-lg text-muted-foreground max-w-2xl">
           Tudo o que você precisa saber para maximizar suas comissões e garantir
-          suas recompensas extras na campanha Gummy × TikTok Shop.
+          suas recompensas extras na Mega Campanha Gummy Original × TikTok Shop.
         </p>
       </div>
     </section>

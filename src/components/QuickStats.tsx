@@ -4,7 +4,7 @@ const stats = [
   {
     icon: Calendar,
     label: "Período",
-    value: "20/03 — 31/03",
+    value: "11/05 — 31/05",
     sublabel: "2026 · Até 23h59 (BRT)",
   },
   {
@@ -16,7 +16,7 @@ const stats = [
   {
     icon: Hash,
     label: "Hashtag Oficial",
-    value: "#GummyTikTok",
+    value: "#GummyOriginal",
     sublabel: "Obrigatória em todos os vídeos",
     highlight: true,
   },
