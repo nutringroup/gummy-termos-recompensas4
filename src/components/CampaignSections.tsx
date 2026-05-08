@@ -10,6 +10,7 @@ import {
   CheckCircle2,
   AlertTriangle,
   XCircle,
+  Calendar,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { ReactNode } from "react";
@@ -99,8 +100,16 @@ const CampaignSections = () => {
         </ul>
       </Section>
 
+      {/* Período */}
+      <Section number="03" title="Período da Campanha" icon={Calendar}>
+        <p className="text-foreground/75 leading-relaxed">
+          A campanha será realizada de <strong>11 de Maio de 2026</strong> até{" "}
+          <strong>31 de Maio de 2026</strong>, às 23h59 (horário de Brasília).
+        </p>
+      </Section>
+
       {/* Termos Gerais */}
-      <Section number="03" title="Termos Gerais" icon={FileText}>
+      <Section number="04" title="Termos Gerais" icon={FileText}>
         <ul className="space-y-3">
           <ListItem>
             A campanha é válida exclusivamente para vendas realizadas dentro da
@@ -122,7 +131,7 @@ const CampaignSections = () => {
       </Section>
 
       {/* Regras de Participação */}
-      <Section number="04" title="Regras de Participação" icon={Video}>
+      <Section number="05" title="Regras de Participação" icon={Video}>
         <p className="text-foreground/75 mb-3">
           Para que as vendas e conteúdos sejam considerados na campanha, é
           obrigatório:
@@ -131,7 +140,10 @@ const CampaignSections = () => {
           <ListItem>
             Marcar corretamente os produtos Gummy nos vídeos
           </ListItem>
-          <ListItem>Utilizar a hashtag oficial da campanha</ListItem>
+          <ListItem>
+            Utilizar a hashtag oficial{" "}
+            <strong className="text-secondary">#GummyOriginal</strong>
+          </ListItem>
           <ListItem>
             Publicar no mínimo <strong>20 vídeos novos</strong> durante o período
             da campanha
@@ -146,7 +158,7 @@ const CampaignSections = () => {
       </Section>
 
       {/* Práticas Não Permitidas */}
-      <Section number="05" title="Práticas Não Permitidas" icon={AlertTriangle}>
+      <Section number="06" title="Práticas Não Permitidas" icon={AlertTriangle}>
         <div className="p-5 rounded-2xl bg-gummy-danger-bg space-y-3">
           <ul className="space-y-3">
             <ListItem variant="x">
@@ -155,6 +167,13 @@ const CampaignSections = () => {
             </ListItem>
             <ListItem variant="x">
               Utilizar múltiplas contas de forma indevida
+            </ListItem>
+            <ListItem variant="x">
+              Fazer comparação de preço entre canais: Site, Farmácias, etc.
+            </ListItem>
+            <ListItem variant="x">
+              Falar do preço "3 por 1" ou jogar goma no lixo sugerindo que está
+              barato demais
             </ListItem>
             <ListItem variant="x">
               Divulgar informações falsas, não comprovadas ou não aprovadas pela marca
@@ -171,7 +190,7 @@ const CampaignSections = () => {
       </Section>
 
       {/* Diretrizes de Conteúdo */}
-      <Section number="06" title="Diretrizes de Conteúdo" icon={FileText}>
+      <Section number="07" title="Diretrizes de Conteúdo" icon={FileText}>
         <p className="text-foreground/75 mb-3">
           Os participantes devem seguir as seguintes orientações:
         </p>
@@ -186,7 +205,7 @@ const CampaignSections = () => {
             >
               gummy.com.br
             </a>{" "}
-            e link fixado na comunidade
+            e materiais enviados na comunidade
           </ListItem>
           <ListItem variant="x">
             Não realizar alegações médicas, terapêuticas ou relacionadas a doenças
@@ -202,7 +221,7 @@ const CampaignSections = () => {
       </Section>
 
       {/* Condições de Pagamento */}
-      <Section number="07" title="Condições de Pagamento" icon={CreditCard}>
+      <Section number="08" title="Condições de Pagamento" icon={CreditCard}>
         <ul className="space-y-3">
           <ListItem>
             As comissões geradas pelos vídeos serão pagas diretamente pela
@@ -210,11 +229,23 @@ const CampaignSections = () => {
           </ListItem>
           <ListItem>
             As recompensas da campanha serão pagas em até{" "}
-            <strong>45 dias</strong> após o encerramento da campanha
+            <strong>35 dias</strong> após o encerramento da campanha
+          </ListItem>
+          <ListItem variant="warning">
+            Ao receber o prêmio, o participante deverá produzir conteúdo com o
+            intuito de motivar outras pessoas
           </ListItem>
           <ListItem>
             É obrigatório que o participante possua dados de pagamento válidos na
             plataforma
+          </ListItem>
+          <ListItem>
+            Prazo para divulgação dos vencedores: <strong>1 semana</strong> após
+            o fim da campanha
+          </ListItem>
+          <ListItem>
+            Após a divulgação dos vencedores, o prazo será de{" "}
+            <strong>1 semana</strong> para emissão da Nota Fiscal
           </ListItem>
           <ListItem variant="warning">
             A emissão de Nota Fiscal é <strong>obrigatória</strong> para
@@ -231,7 +262,7 @@ const CampaignSections = () => {
       </Section>
 
       {/* Utilização de Conteúdo */}
-      <Section number="08" title="Utilização de Conteúdo" icon={Share2}>
+      <Section number="09" title="Utilização de Conteúdo" icon={Share2}>
         <p className="text-foreground/75 leading-relaxed">
           Ao participar da campanha e receber recompensas, o participante autoriza a
           Gummy a utilizar seus conteúdos para fins de marketing, incluindo
@@ -244,7 +275,7 @@ const CampaignSections = () => {
       </Section>
 
       {/* Modificações */}
-      <Section number="09" title="Modificações e Encerramento" icon={Settings}>
+      <Section number="10" title="Modificações e Encerramento" icon={Settings}>
         <p className="text-foreground/75 leading-relaxed">
           A Gummy reserva-se o direito de modificar, suspender ou encerrar a
           campanha a qualquer momento, conforme necessário.

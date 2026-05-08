@@ -1,13 +1,14 @@
 const sections = [
   { id: "01", label: "Visão Geral" },
   { id: "02", label: "Elegibilidade" },
-  { id: "03", label: "Termos Gerais" },
-  { id: "04", label: "Participação" },
-  { id: "05", label: "Proibições" },
-  { id: "06", label: "Conteúdo" },
-  { id: "07", label: "Pagamento" },
-  { id: "08", label: "Uso de Conteúdo" },
-  { id: "09", label: "Modificações" },
+  { id: "03", label: "Período" },
+  { id: "04", label: "Termos Gerais" },
+  { id: "05", label: "Participação" },
+  { id: "06", label: "Proibições" },
+  { id: "07", label: "Conteúdo" },
+  { id: "08", label: "Pagamento" },
+  { id: "09", label: "Uso de Conteúdo" },
+  { id: "10", label: "Modificações" },
 ];
 
 const StickyNav = () => {
